@@ -1,13 +1,6 @@
 number_of = int(input())
 for _ in range(number_of):
-    numbers = list(map(int, input().split()))
-    a= int(numbers[0]) 
-    b=int(numbers[1])
-    c= int(numbers[2])
-    d= int(numbers[3])
-
-
-   
+    a,b,c,d = list(map(int, input().split()))
     w = (b - a) % 12
     k = (c - a) % 12
     m = (d - a) % 12
@@ -18,5 +11,4 @@ for _ in range(number_of):
         print("NO")
 
 
-print((0 < k < w))
 
